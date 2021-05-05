@@ -1,0 +1,28 @@
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+<style type="text/css">
+    .st0{display:none;}
+    .st1{display:inline;fill:none;stroke:#720629;stroke-width:8;stroke-miterlimit:10;}
+    .st2{fill:#FFFFFF;stroke:#C6001B;stroke-width:14;stroke-miterlimit:10;}
+    .st3{fill:none;stroke:#C6001B;stroke-width:14;stroke-miterlimit:10;}
+</style>
+<g class="st0">
+    <path class="st1" d="M589.98,482.04H387.93c-6.6,0-12-5.4-12-12V80.49c0-6.6,5.4-12,12-12h202.05c6.6,0,12,5.4,12,12v389.55
+        C601.98,476.64,596.58,482.04,589.98,482.04z"/>
+    <rect x="396.31" y="110.55" class="st1" width="181.37" height="305.35"/>
+    <path class="st1" d="M518.68,93.02h-62.95c-1.96,0-3.57-1.61-3.57-3.57v-2.5c0-1.96,1.61-3.57,3.57-3.57h62.95
+        c1.96,0,3.57,1.61,3.57,3.57v2.5C522.25,91.42,520.64,93.02,518.68,93.02z"/>
+    <circle class="st1" cx="486.99" cy="449.26" r="17.87"/>
+</g>
+<g>
+    <path class="st2" d="M564.97,305.63H247.15c-6.6,0-12-5.4-12-12V97.07c0-6.6,5.4-12,12-12h317.82c6.6,0,12,5.4,12,12v196.56
+        C576.97,300.23,571.57,305.63,564.97,305.63z"/>
+    <rect x="235.15" y="149.09" class="st2" width="341.82" height="56.33"/>
+</g>
+<path class="st2" d="M724.73,405.54H408.55c-6.6,0-12-5.4-12-12v-195.5c0-6.6,5.4-12,12-12h316.18c6.6,0,12,5.4,12,12v195.5
+    C736.73,400.14,731.33,405.54,724.73,405.54z"/>
+<path class="st2" d="M487.91,359.72h-50.12c-5.74,0-10.45-4.7-10.45-10.45v-27.11c0-5.74,4.7-10.45,10.45-10.45h50.12
+    c5.75,0,10.45,4.7,10.45,10.45v27.11C498.36,355.02,493.66,359.72,487.91,359.72z"/>
+<line class="st3" x1="556.04" y1="311.72" x2="694.35" y2="311.72"/>
+<line class="st3" x1="556.04" y1="354.55" x2="694.35" y2="354.55"/>
+</svg>

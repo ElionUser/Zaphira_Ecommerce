@@ -1,0 +1,56 @@
+
+
+/* colors base */
+
+.bg-cus-b { background-color:#000; }
+.bg-cus-w { background-color:#fff; }
+.bg-cus-b0 { background-color:rgb(235, 235, 235); }
+.bg-cus-b1 { background-color:rgba(0,0,0,.3); }
+.bg-cus-w1 { background-color:rgba(255,255,255,.3); }
+.bg-cus-b2 { background-color:rgba(0,0,0,.7); }
+.bg-cus-w2 { background-color:rgba(255,255,255,.7); }
+.bg-cus-b3 { background-color:rgba(0,0,0,.9); }
+.bg-cus-w3 { background-color:rgba(255,255,255,.9); }
+
+/* colors status */
+
+.bg-03 { background-color:rgb(240, 240, 240);}
+.bg-01-success { background-color:rgb(188, 255, 188); }
+.bg-01-info { background-color:rgb(188, 255, 255); }
+.bg-01-danger { background-color:rgb(255, 188, 205); }
+.bg-01-warning { background-color:rgb(255, 251, 188); }
+.bg-01-interactive { background-color:rgb(192, 188, 255); }
+
+/* colors - bg */
+
+.bg-cus-01 { background-color:rgb(246, 210, 255); }
+.bg-cus-02 { background-color:rgb(143, 36, 243); }
+.bg-cus-03 { background-color:rgb(71, 231, 252); }
+.bg-cus-04 { background-color:rgb(71, 140, 252); }
+.bg-cus-05 { background-color:rgb(8, 20, 42); }
+.bg-cus-06 { background-color:rgb(29, 67, 139); }
+
+
+/* colors - fonts */
+
+.f-cus-01 { color:rgb(143, 36, 243); }
+.f-cus-02 { color:rgba(0,0,0,.8);}
+.f-cus-02 { color:rgba(0,0,0,.7);}
+.f-cus-03 { color:rgb(255, 175, 28);}
+.f-cus-04 { color:rgb(71, 231, 252); }
+
+
+/* colors fonts */
+
+.f-b { color:#000; }
+.f-w { color:#fff; }
+.f-w1 { color:rgba(255,255,255,.3); }
+.f-w2 { color:rgba(255,255,255,.7); }
+.f-c1 { color:rgb(43, 144, 29); }
+.f-c2 { color:rgb(29, 92, 144); }
+.f-c3 { color:rgb(144, 29, 39); }
+.f-c4 { color:rgb(142, 144, 29); }
+.f-c5 { color:rgb(88, 29, 144); }
+.f-cb1 { color:rgba(0,0,0,.7); }
+.f-cb2 { color:rgba(0,0,0,.3); }
+.f-cb3 { color:red !important; }
