@@ -58,6 +58,12 @@
             'type' => 'get',
         ),
         array(
+            'path' => 'Shopping/id',
+            'controller' => 'productController',
+            'method' => 'Shopping',
+            'type' => 'get',
+        ),
+        array(
             'path' => 'productos',
             'controller' => 'productController',
             'method' => 'index',

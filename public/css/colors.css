@@ -29,7 +29,8 @@
 .bg-cus-04 { background-color:rgb(71, 140, 252); }
 .bg-cus-05 { background-color:rgb(8, 20, 42); }
 .bg-cus-06 { background-color:rgb(29, 67, 139); }
-
+.bg-cus-07 { background-color:rgb(34, 33, 70); }
+.bg-cus-08 { background-color:#5a12ce; }
 
 /* colors - fonts */
 
@@ -54,3 +55,11 @@
 .f-cb1 { color:rgba(0,0,0,.7); }
 .f-cb2 { color:rgba(0,0,0,.3); }
 .f-cb3 { color:red !important; }
+
+
+/* SHOP */
+
+.bg-gradient-01 { 
+    background: rgb(121,9,47);
+    background: linear-gradient(90deg, rgba(121,9,47,1) 0%, rgba(0,0,0,0) 100%);
+}

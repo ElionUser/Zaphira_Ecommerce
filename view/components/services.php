@@ -1,6 +1,6 @@
-<div class="col-xl-12 p-0">
+<div class="col-xl-12 p-0" style="position:relative;z-index:30;">
     <div class="row">
-        <div class="col-xl-4 border py-5">
+        <div class="col-xl-4 border bg-white bs py-5">
             <div class="col-xl-12">
                 <div class="col-xl-5 mx-auto">
                 
@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 border py-5">
+        <div class="col-xl-4 border bg-white bs py-5">
             <div class="col-xl-12">
                 <div class="col-xl-3 mx-auto">
                     <h1> <span class="icon-credit-card"></span> </h1>
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 border py-5">
+        <div class="col-xl-4 border bg-white bs py-5">
             <div class="col-xl-12">
                 <div class="col-xl-3 mx-auto">
                     <h1> <span class="icon-credit-card"></span> </h1>

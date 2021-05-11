@@ -29,13 +29,62 @@
             ]);
         }
 
-        public function shop() {
+        public function Shopping($id) {
+            
 
-            $products = products::all('products')
+            if($_POST['brands_id'] == 'Todos' && $_POST['categories_id'] == 'Todos') {
+
+                $products = products::all('products')
+                    ->categories()->brands()
+                    ->whereCond('stock','>',0)
+                    ->orderBy('products_id','DESC')
+                    ->get();
+            }
+
+            else if($_POST['brands_id'] != 'Todos' && $_POST['categories_id'] == 'Todos' ) {
+
+                $products = products::all('products')
+                    ->categories()->brands()
+                    ->whereCond('stock','>',0)
+                    ->andwhere('brands_id',$_POST['brands_id'])
+                    ->orderBy('products_id','DESC')
+                    ->get();
+            }
+            else if($_POST['brands_id'] == 'Todos' && $_POST['categories_id'] != 'Todos' ) {
+
+                $products = products::all('products')
                 ->categories()->brands()
                 ->whereCond('stock','>',0)
+                ->andwhere('categories_id',$_POST['categories_id'])
                 ->orderBy('products_id','DESC')
                 ->get();
+            }
+            else if($_POST['brands_id'] != 'Todos' && $_POST['categories_id'] != 'Todos' ) {
+
+                $products = products::all('products')
+                ->categories()->brands()
+                ->whereCond('stock','>',0)
+                ->andwhere('brands_id',$_POST['brands_id'])
+                ->andwhere('categories_id',$_POST['categories_id'])
+                ->orderBy('products_id','DESC')
+                ->get();
+            }
+
+            $array = array(
+                'path' => helper::base_path(),
+                'products' => $products,
+            );
+
+            echo json_encode($array);
+        }
+
+        public function shop() {
+           
+            $products = products::all('products')
+            ->categories()->brands()
+            ->whereCond('stock','>',0)
+            ->orderBy('products_id','DESC')
+            ->get();
 
             $categories = categories::all('categories')->get();
 

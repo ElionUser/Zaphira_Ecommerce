@@ -127,6 +127,12 @@ class Tenacy extends sqlCommand {
         return new static;
     }
 
+    public static function countResults($table) {
+
+        array_push(self::$sql,"SELECT COUNT(*) total FROM $table");
+        return new static;
+    }
+
     public function limit($limit) {
 
         array_push(self::$sql , "LIMIT $limit");

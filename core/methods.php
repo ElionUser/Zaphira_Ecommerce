@@ -23,6 +23,110 @@
         
     }
 
+    function paginateWeb($id,$pages) {
+
+        // ceil redondea un numero hacia arriba 
+        //se divide el total de filas por la cantidad a mostrar
+
+        // $btnsPaginate = ceil(count($query)/$limit);
+        
+
+        $back = $id - 1;
+        $next = $id + 1;
+        $backDisable = '';
+        $nextDisable = '';
+
+       
+       
+        echo "<ul class='cont-btns-paginates-web'>";
+                
+                if($id == 1) { 
+
+                    echo   "<li class='btn-paginate-web'>
+                                <span class='icon-chevron-left d-block text-center'></span>
+                            </li>"; 
+                }
+                else { 
+                    echo   "<li class='btn-paginate-web'>
+                                <a href='".helper::base_path()."/shop/$back'>
+                                    <span class='icon-chevron-left'></span>
+                                </a>
+                            </li>";
+                }
+
+
+                    if($id - 2 > 1) {
+
+                        $i = $id - 2;
+
+                        echo "<li class='btn-paginate-web'>
+                            <a href='".helper::base_path()."/shop/1'>1</a>
+                        </li>";
+                        echo "<li class='btn-paginate-web disabled'>
+                            <a>...</a>
+                        </li>";
+
+                        
+
+                    } else { $i = 1;}
+                    
+                    
+                    for(; $i <= $id + 2  ; $i++ ) {
+                        
+
+                            if($i <= $pages) {
+                            
+                                if($id == $i) {
+
+                                    echo "<li class='btn-paginate-web active-paginate'>
+                                            <a href='".helper::base_path()."/shop/$i'>$i</a>
+                                        </li>";
+    
+                                } else {
+    
+                                    echo "<li class='btn-paginate-web'>
+                                        <a href='".helper::base_path()."/shop/$i'>$i</a>
+                                    </li>";
+                                }
+                            }
+                              
+                            
+                    }
+
+                    if($id + 2 < $pages) {
+
+                        $i = $id - 2;
+                        echo "<li class='btn-paginate-web disabled'>
+                            <a>...</a>
+                        </li>";
+                        echo "<li class='btn-paginate-web'>
+                            <a href='".helper::base_path()."/shop/$pages'>$pages</a>
+                        </li>";
+                        
+
+                        
+
+                    } else { $i = $pages;}
+
+                    
+
+                    if($id == $pages) { 
+
+                        echo   "<li class='btn-paginate-web'>
+                                    <span class='icon-chevron-right d-block text-center'></span>
+                                </li>";
+
+                    }
+                    else { 
+                        echo    "<li class='btn-paginate-web $nextDisable'>
+                                    <a href='".helper::base_path()."/shop/$next'>
+                                        <span class='icon-chevron-right'></span>
+                                    </a>
+                                </li>";
+                    } 
+    }
+
+
     function paginate($id,$pages) {
 
         // ceil redondea un numero hacia arriba 

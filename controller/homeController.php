@@ -22,27 +22,10 @@
 
         public function index() {
 
-
-            // $_POST = array(
-            //     'avatar' => 'Matias.jpg',
-            //     'name' => 'Matias Diarte',
-            //     'email' => 'diartematias31@gmail.com',
-            //     'password' => tCrypt('22363033'),
-            // );
-
-            // users::create('users',$_POST);
-
-            // $users = users::all('users')
-            //     ->join('users','posts','id','user_id')
-            //     ->join('users','personals','id','user_id')
-            //     ->get();
-            // print_r($users);
-
             $products = products::all('products')
                 ->categories()->brands()
-                // ->where('brands_id',1)
                 ->orderBy('products_id','DESC')
-                ->limit(6)
+                ->limit(8)
                 ->get();
 
             view::show('home',[

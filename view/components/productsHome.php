@@ -1,8 +1,8 @@
-<div class="row">
+<div class="row bs">
 
     <?php foreach($compact['products'] as $p) : ?>
             
-        <div class="box-cards-products col-xl-3 box-cards-products trans" style="overflow:hidden;">
+        <div class="box-cards-products col-xl-3 box-cards-products trans bg-white" style="overflow:hidden;">
             <a href="http://localhost/MVC-ORM-MASTER/productos/<?php echo $p->products_id; ?>" class="td-none">
                 <div class="col-xl-10 py-4 mx-auto">
                 <?php echo "<img src='http://localhost/MVC-ORM-MASTER/storage/images/products/$p->img' class='img-fluid' >"; ?>
@@ -15,12 +15,9 @@
                     <div class="row">
                         <div class="col-xl-6">
                             <small class="f-cus-03 ts">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star"></span>
-                                <span class="icon-star"></span>
-                            </small>
+                                <?php echo stars($p->points); ?>
+                            </small> <br>
+                            <small class="cb-1"><?php echo $p->points.' Pts'; ?></small>
                         </div>
                         <div class="col-xl-6">
                             <span class="badge rounded-pill bg-cus-01 f-cus-01">
@@ -41,7 +38,3 @@
         </div>
             
         <?php endforeach; ?>
-
-        <div class="col-xl-6 border p-0">
-        <img src="http://localhost/MVC-ORM-MASTER/public/images/components/women/woman.jpg" class="img-fluid"></div>
-    </div>
