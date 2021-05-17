@@ -1,4 +1,4 @@
-<div class="col-xl-12">
+<!-- <div class="col-xl-12">
     <div class="row">
         <div class="col-xl-9 pt-2">
             <ul class="nav">
@@ -12,7 +12,7 @@
 
     </div>
     <hr>
-</div>
+</div> -->
 
 <?php  if(!$compact['shells']): ?>
     <div class="col-xl-6 mx-auto text-center alert alert-danger" role="alert">

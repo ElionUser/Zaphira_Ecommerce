@@ -148,6 +148,10 @@
         // Muestra el carrito de compras en pagina y emite mercado pago si esta activo
         public function cart() {
 
+            $data = file_get_contents('./model/companySett.json');
+
+            $company = json_decode($data);
+
             if(TEST_MP) {
 
                 $cartShop = json_decode($_POST['cart']);
@@ -180,7 +184,7 @@
                 view::show('cart',['preference' => $preference]);
             
             } else { 
-                view::show('cart');
+                view::show('cart',['company' => $company]);
             }  
         }
 

@@ -15,7 +15,6 @@
     $products->integer('brand_id');
     $products->integer('stock');
     $products->string('status');
-    $products->string('talles');
     $products->float('descount');
     $products->integer('descount_active');
     $products->float('points');

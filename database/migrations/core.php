@@ -38,7 +38,7 @@
             array_push($this->sql,"FOREIGN KEY (category_id) REFERENCES categories(id)");
         }
 
-        public function text($text,$long = 20) {
+        public function text($text,$long = 250) {
             array_push($this->sql,"$text TEXT($long),");
         }
 

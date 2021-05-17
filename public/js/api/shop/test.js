@@ -29,34 +29,34 @@ function templateString (data,path) {
         if(item.descount_active != 0) {decount = `<span class="badge-01 bg-cus-08 ml-2"><small>${item.descount} % OFF</small></span>`}        
         else {decount = ''}
         Shop.innerHTML += 
-        `<div class="col-xl-12 b-b cp box-products-shop">
-            <div class="row">
-                <div class="col-xl-2 py-1">
-                    <a href="${path}/productos/${item.products_id}">
-                        <img src="${path}/storage/images/products/${item.img}" class="img-fluid">
-                    </a>
-                    </div>
-                    <div class="col-xl-4 py-4">
-                        <h6 class="fw-b f-cb1">${item.name.toUpperCase()}</h6>
-                        <small class="f-cb1">
-                            <span class="icon-tag mr-2"></span>
-                            ${item.name_categories} - ${item.name_brands}
-                        </small>
-                    </div>
-                    <div class="col-xl-3 py-4">
-                <h6 class="f-c5">$ ${item.price} ${decount}</h6>
-                <small>Impuesto: ${item.tax} % </small> <br>
-            </div>
-            <div class="col-xl-2 border px-4 pt-3">
-                
-            </div>
-            <div class="col-xl-1 pt-4">
-                <div class="btn-cart d-block mx-auto cp trans">
-                    <span class="icon-cart2"></span>
+        `<div class="col-xl-12 bg-white box-list-products-shop">
+            <a class="row" style="text-decoration:none;" href="${path}/productos/${item.products_id}"> 
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4 py-1">
+                    <img src="${path}/storage/images/products/${item.img}" class="img-fluid">
                 </div>
-            </div>
-        </div>
-    </div>`
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-8 py-5 f-b">
+                    <h6>${item.name.toUpperCase()}</h6>
+                    <small class="f-cb1">
+                        <span class="icon-tag mr-2"></span>
+                        ${item.name_categories} - ${item.name_brands}
+                    </small>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 py-5 price">
+                    <h6 class="f-c5 fw-b">$ ${item.price}</h6>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 py-5 tax">
+                    <div class="col-xl-12 d-block mx-auto">
+
+                        <small class="fw-b f-cb1">Imp: ${item.tax}</small> <br>
+                        ${decount}
+                        <br>
+                    </div>        
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 py-5 f-b disponibility">
+                    <small> <span class="icon-check mr-2"></span> Disponible </small>
+                </div>
+            </a>
+        </div>`
     }
 }
 

@@ -16,7 +16,7 @@
                         Nuevo
                     </a>
                 </li>
-                <li class="nav-item br-3 bg-cus-04 mr-4">
+                <!-- <li class="nav-item br-3 bg-cus-04 mr-4">
                     <a class="nav-link f-w" href="#" tabindex="-1" aria-disabled="true">
                         <span class="icon-file-excel"></span>
                     </a>
@@ -25,7 +25,7 @@
                     <a class="nav-link f-w" href="#" tabindex="-1" aria-disabled="true">
                         <span class="icon-file-pdf"></span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         
         </div>

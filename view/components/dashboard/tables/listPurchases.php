@@ -2,19 +2,19 @@
 <table id="myTable"></table>
 <div class="col-xl-12">
     <div class="row">
-        <div class="col-xl-10 py-1">
+        <div class="col-xl-8 py-1">
             <span class="icon-layout mr-3"></span>
             Tabla de Pedidos de productos
         </div>
-        <div class="col-xl-2">
+        <div class="col-xl-4">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo helper::base_path().'/dashboard/products/purchases';?>">
+                    <a class="f-b active" href="<?php echo helper::base_path().'/dashboard/products/purchases';?>">
                         <span class="icon-plus2"></span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo helper::base_path().'/dashboard/products/1'; ?>">
+                <li class="nav-item px-4">
+                    <a class="f-b" href="<?php echo helper::base_path().'/dashboard/products/1'; ?>">
                         <span class="icon-box"></span>
                     </a>
                 </li>

@@ -1,4 +1,4 @@
-<div class="col-xl-12 py-3 border">
+<div class="col-xl-12 py-3">
     <div class="row">
         <?php if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0): ?>
             <?php foreach($_SESSION['cart'] as $cart): ?>

@@ -1,69 +1,82 @@
 
 
-<div id="main-slide" class="col-xl-12">
-    <span id="name-shoe-slide">Airbend Skill</span>
-    <div id="box-interview-slide"></div>
-    <div id="box-social-networks">
-        <span class="icon-facebook icon-social-main"></span>
-        <span class="icon-twitter icon-social-main"></span>
-        <span class="icon-instagram icon-social-main"></span>
-        <span class="icon-pinterest icon-social-main"></span>
-        <span class="icon-youtube icon-social-main"></span>
-    </div>
-    <div id="box-contnt-slide">
-        <div class="col-xl-12">
-            <div class="row">
-                
-                <div class="col-xl-5 py-5">
-                    <small class="f-w">Zapatillas · Deporte · Ropa · Calidad</small>
-                    
-                    <hr style="border-bottom:1px solid rgba(255,255,255,.5);">
-                    <h4 class="f-w">Persigue el deporte , entrena , mejora </h4>
-                    <h1 class="f-w">se una LEYENDA</h1>
-                    <p class="text-white fw-l">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa cumque praesentium ea ad vel! Ea laboriosam amet repellat totam, deserunt sequi temporibus quasi aliquid reiciendis natus harum ipsam corrupti corporis.
-                    </p>
-                    <button id="btn-slide">
-                        Ver mas...
-                    </button>
-                </div>
-                <div class="col-xl-7">
-                    <img src="<?php echo helper::base_path().'/public/images/slide/01.png'; ?>" class="img-fluid img-slide">
-                </div>
+<div class="col-xl-12 px-0 mb-4" style="padding-top:210px;">
+    <div class="col-xl-12 bg-gradient-02">
+
+        <!-- <div id="box-numbers-slider">
+            <div class="box-border-btn-slide">
+                <div class="inner-box-btn"></div> 
+            </div>
+            <div class="box-border-btn-slide">
+                <div class="inner-box-btn"></div> 
+            </div>
+            <div class="box-border-btn-slide">
+                <div class="inner-box-btn"></div> 
+            </div>
+            <div class="box-border-btn-slide">
+                <div class="inner-box-btn"></div> 
+            </div>
+            <div class="box-border-btn-slide">
+                <div class="inner-box-btn"></div> 
             </div>
         </div>
-    </div>
-</div>    
-
-
-<!-- no -->
-
-<div class="col-xl-12 border bg-03 d-none" style="height:100vh;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6 border py-4" style="height:100vh;">
-                <div class="col-xl-10 mx-auto mt-5 py-5">
-                    
-                    <hr>
-                    <h5>Persigue el deporte , entrena , mejora </h5>
-                    <h1>se una LEYENDA</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique aliquid officia cupiditate nobis excepturi ut itaque voluptatum corrupti voluptates reiciendis, fugit temporibus ratione ullam obcaecati rerum, exercitationem, dignissimos magnam quas?</p>
-
-                    <button class="btn btn-primary">
-                        ver mas...
-                    </button>
-                </div>
-            </div>
-            <div class="col-xl-6 border py-4" style="height:100vh;">
-                <div class="col-xl-12 py-4">
-                    <?php for($i = 0 ; $i < count($compact) ; $i++): ?>
-                        <div class="number-slide"></div>
-                    <?php endfor; ?>
-                </div>
-                <?php foreach($compact as $procs):?>
-                    <?php echo "<img src='http://localhost/MVC-ORM-MASTER/storage/images/products/$procs->img' class='img-fluid' style='position:absolute;'>" ?>
-                <?php endforeach;?>
-            </div>
+     -->
+        <div class="col-xl-6 mx-auto">
+            <img src="<?= helper::storageImg().'/home/slide/img-slide-01.png'; ?>" class="img-fluid">
+        </div>
+        <div class="box-brand-slider">
+            <span class="text-inner-brand">N I K E</span>
         </div>
     </div>
+    <!-- <div class="col-xl-12 p-0 ov-h c-slide-06 box-slide-01"> -->
+        <!-- <?php foreach($compact['procPerCategory'] as $procCategory): ?>
+            <div class="col-xl-12 f-w text-center">
+
+                <div class="row">
+
+                    <div class="col-xl-6 col-lg-7 col-md-6 px-4 py-5">
+
+                        <div class="col-xl-8 mx-auto">
+                            <span class="badge rounded-pill bg-cus-01 f-cus-01 px-3 mr-4">
+                                <?php echo $procCategory->name_categories; ?>
+                            </span> 
+                            <small> <?php echo stars($procCategory->points); ?> </small>
+                            <h4 class="mt-4"><?php echo strtoupper($procCategory->name); ?></h4>
+                        </div>
+
+                        <div class="col-xl-8 py-2 mx-auto">
+                            <p><?php echo $procCategory->description; ?></p>
+                        </div>
+
+                        <div class="col-xl-8 py-2 mx-auto">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <h5 class="d-block">$ <?php echo $procCategory->price; ?></h5>
+                                </div>
+                                <div class="col-xl-12">
+                                    <?php if($procCategory->descount_active): ?>
+                                        <span class="badge rounded-pill bg-cus-01 f-cus-01 px-3">
+                                            <?php echo $procCategory->descount.' % OFF'; ?>
+                                        </span>
+                                    <?php endif; ?>   
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-6 col-lg-5 col-md-6">
+                        <div class="col-xl-8 col-md-12 col-sm-9 col-10 mx-auto">
+                            <img src="<?php echo helper::storageImg().'/products/'.$procCategory->img;?>" class="img-slide">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        <?php endforeach; ?> -->
+    <!-- </div> -->
 </div>
+
+    
+

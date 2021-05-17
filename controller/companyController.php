@@ -43,6 +43,8 @@
             
             writeFile('./model/companySett.json',$json);
             
+            // echo $json;
+
             helper::redirect('/dashboard/company');
        
         }

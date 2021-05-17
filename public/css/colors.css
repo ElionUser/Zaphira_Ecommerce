@@ -31,6 +31,7 @@
 .bg-cus-06 { background-color:rgb(29, 67, 139); }
 .bg-cus-07 { background-color:rgb(34, 33, 70); }
 .bg-cus-08 { background-color:#5a12ce; }
+.bg-cus-09 { background-color:rgb(121,9,47);}
 
 /* colors - fonts */
 
@@ -57,9 +58,24 @@
 .f-cb3 { color:red !important; }
 
 
+/* SLIDESHOW */
+
+.c-slide-01 { background-color:rgb(121,9,47); }
+.c-slide-02 { background-color:rgb(89, 9, 121); }
+.c-slide-03 { background-color:rgb(180, 160, 212); }
+.c-slide-04 { background-color:rgb(9, 52, 121); }
+.c-slide-06 { background-color:rgb(163, 203, 212); }
+.c-slide-01 { background-color:rgb(121,9,47); }
+.c-slide-01 { background-color:rgb(121,9,47); }
+
+
 /* SHOP */
 
 .bg-gradient-01 { 
     background: rgb(121,9,47);
     background: linear-gradient(90deg, rgba(121,9,47,1) 0%, rgba(0,0,0,0) 100%);
+}
+.bg-gradient-02 {
+    background: rgb(255,255,255);
+background: linear-gradient(86deg, rgba(255,255,255,1) 79%, rgba(168,170,255,0.5886729691876751) 100%);
 }

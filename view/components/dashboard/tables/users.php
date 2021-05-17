@@ -1,25 +1,25 @@
-<div class="col-xl-12 p-4 br-3 bg-white">
+<div class="col-xl-12 br-3 py-3 bg-white">
     <div class="row">
-        <div class="col-xl-9 py-2 px-5">
-            <span class="icon-users mr-3"></span>Usarios
+        <div class="col-xl-10 p-3">
+            <span class="icon-users mr-3 ml-5"></span>Usarios
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-2">
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo helper::base_path().'/dashboard/users/create';?>">
+                <li class="nav-item p-3">
+                    <a class="f-b" href="<?php echo helper::base_path().'/dashboard/users/create';?>">
                         <span class="icon-plus2"></span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
+                <!-- <li class="nav-item p-3">
+                    <a class="f-b" href="#">
                         <span class="icon-file-pdf"></span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
+                <li class="nav-item p-3">
+                    <a class="f-b" href="#">
                         <span class="icon-file-excel"></span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>

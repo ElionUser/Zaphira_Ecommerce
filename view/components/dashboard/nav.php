@@ -56,9 +56,9 @@
                             <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/products/1"><small><span class="icon-list2 mr-3"></span>Lista de productos</small></a></li>
                             <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/categories"><small><span class="icon-tag mr-3"></span>Categorias</small></a></li>
                             <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/brands"><small><span class="icon-tag mr-3"></span>Marcas</small></a></li>
-                            <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/brands"><small><span class="icon-warning mr-3"></span>Alerta de stock</small></a></li>
+                            <!-- <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/brands"><small><span class="icon-warning mr-3"></span>Alerta de stock</small></a></li>
                             <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/stock/"><small><span class="icon-box mr-3"></span>Importar stock</small></a></li>
-                            <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/stock/"><small><span class="icon-barcode mr-3"></span>Codigo de barras</small></a></li>
+                            <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/stock/"><small><span class="icon-barcode mr-3"></span>Codigo de barras</small></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                         <ul class="nav-bar-list-dashboard">
                             <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/products/purchases"><small><span class="icon-plus2 mr-3"></span>Nueva compra</small></a></li>
                             <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/products/purchases/listPurchases"><small><span class="icon-list2 mr-3"></span>Lista de pedidos</small></a></li>
-                            <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/products/purchases/listPurchases"><small><span class="icon-list2 mr-3"></span>Lista de devueltos</small></a></li>
+                            <!-- <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/products/purchases/listPurchases"><small><span class="icon-list2 mr-3"></span>Lista de devueltos</small></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -139,16 +139,14 @@
                     </div>
                 </h6>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <div class="accordion-body">
-                            <ul class="nav-bar-list-dashboard">
-                                <a class="links f-w2" href="http://localhost/MVC-ORM-MASTER/"><li>Inicio</li></a>
-                            </ul>
-                        </div>    
+                <div class="accordion-body">
+                        <ul class="nav-bar-list-dashboard">
+                            <li><a class="links f-w2" href="<?php echo helper::base_path(); ?>"><small>Inicio</small></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
+            <!-- <div class="accordion-item">
                 <h6 class="accordion-header" id="headingTwo">
                     <div class="btns"  data-bs-toggle="collapse" data-bs-target="#setting" aria-expanded="false" aria-controls="collapseTwo">
                         <small><span class="icon-cogs icon-gradient-01 mr-3"></span></small>
@@ -156,7 +154,7 @@
                         <span class="icon-chevron-down"></span>
                     </div>
                 </h6>
-                <div id="setting" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                 <div id="setting" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul class="nav-bar-list-dashboard">
                             <li><a class="links f-w2" href="<?php echo helper::dash(); ?>/products/nuevo"><small>Empresa</small></a></li>
@@ -166,7 +164,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="btns"  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <small><span class="icon-log-out icon-gradient-01 mr-3"></span></small>
                 <span class="f-w2 fw-m">Salir</span>

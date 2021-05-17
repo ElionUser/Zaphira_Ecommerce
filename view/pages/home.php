@@ -1,16 +1,17 @@
-<?php view::component('slide',$compact['products']); ?>
 
-<div class="container" style="margin-top:-100px;position:relative;z-index:20;">
 
-    <div class="col-xl-12 p-0">
-        <!-- componente de servicios  -->
 
-        <?php view::component('services'); ?>
+<div class="container p-0">
 
-        <?php view::component('web/home/promos'); ?>
+    <?php view::component('slide',$compact); ?>
+    
+    <?php view::component('services'); ?>
 
-        <?php view::component('productsHome',$compact); ?>
+    <?php view::component('web/home/promos'); ?>
 
-    </div>
+    <?php view::component('productsHome',$compact); ?>
 
+    <?php view::component('web/home/banner',$compact); ?>
+    
 </div>
+

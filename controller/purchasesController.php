@@ -133,8 +133,6 @@
 
             include './view/pdf/comprobantes/purchases.php';
 
-            
-
             $dompdf = new Dompdf();
             $dompdf->loadHtml(ob_get_clean());
             $dompdf->setPaper('letter', 'portrait'); //portrait or landscape
@@ -158,6 +156,8 @@
                 'date' => $time->now(), 
                 'items' => json_encode($products),
             );
+
+            var_dump($_POST);
 
             purchases::create('purchases',$_POST);
 

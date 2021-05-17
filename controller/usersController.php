@@ -19,7 +19,11 @@
 
         public function ingreso() {
 
-            view::show('login');
+            $data = file_get_contents('./model/companySett.json');
+
+            $company = json_decode($data);
+
+            view::show('login',['company' => $company]);
         }
 
         public function logIn() {
@@ -33,7 +37,7 @@
             
             auth::logOut();
 
-            header('Location: http://localhost/MVC-ORM-MASTER/');
+            helper::back();
         }
 
         public function uploadImg() {

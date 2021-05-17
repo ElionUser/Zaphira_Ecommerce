@@ -79,6 +79,10 @@
         }
 
         public function shop() {
+
+            $data = file_get_contents('./model/companySett.json');
+
+            $company = json_decode($data);
            
             $products = products::all('products')
             ->categories()->brands()
@@ -94,10 +98,15 @@
                 'products' => $products,
                 'categories' => $categories,
                 'brands' => $brands,
+                'company' => $company
             ]);
         }
 
         public function details($id) {
+
+            $data = file_get_contents('./model/companySett.json');
+
+            $company = json_decode($data);
 
             $procProfile = products::all('products',$id)
                     ->categories()->brands()
@@ -106,7 +115,7 @@
 
             $products = products::all('products')
                 ->categories()->brands()
-                ->limit(6)
+                ->limit(8)
                 ->get();
 
             $coments = coments::all('coments')
@@ -118,6 +127,7 @@
                 'proc' => $procProfile,
                 'products' => $products,
                 'coments' => $coments,
+                'company' => $company
             ]);
         }
 

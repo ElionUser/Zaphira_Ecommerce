@@ -6,6 +6,6 @@
 
     <?php view::component('productsHome',$compact);?>
 
-    <?php view::component('comentsProcProfile',$compact); ?>
+    <!-- <?php view::component('comentsProcProfile',$compact); ?> -->
 
 </div>

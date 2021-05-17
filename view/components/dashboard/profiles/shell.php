@@ -4,10 +4,9 @@
             <h5>Detalles de venta</h5>
             <hr>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-12">
             <p># ID de compra: <?php echo $compact['shells'][0]->shells_id; ?></p> 
-            <p>Cantidad de items: <span class="icon-box mr-2"></span><?php echo count($compact['items']); ?></p>
-            <p>Sub-total: $ <?php echo $compact['shells'][0]->sub_total; ?></p>
+            <p>Cantidad de items distintos: <span class="icon-box mr-2"></span><?php echo count($compact['items']); ?></p>
             <p>Total: $ <?php echo $compact['shells'][0]->total; ?></p> 
         </div>
         <div class="col-xl-12">

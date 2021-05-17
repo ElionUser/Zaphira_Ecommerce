@@ -12,6 +12,7 @@
 
     require_once './model/ORM/products.php';
     require_once './model/ORM/users.php';
+    require_once './model/ORM/category.php';
 
     class homeController extends controller {
 
@@ -22,14 +23,50 @@
 
         public function index() {
 
+            $data = file_get_contents('./model/companySett.json');
+
+            $company = json_decode($data);
+
+            //Buscamos la cantidad de categorias hay
+            $countCategories = categories::countResults('categories')->get();
+
+            //Hacemos un numero aleatorio con esa cantidad usando rand
+            $countCat = $countCategories[0]->total;
+
+            //buscamos una categoria al azar
+            $category = categories::all('categories')
+                ->whereCond('categories_id','=',rand(1,$countCat))  
+                ->get();
+
+            $oneProc = products::all('products')
+                ->whereCond('products_id','=',1)
+                ->get();
+
+            //buscamos todos los productos que tengan esa categoria
+            $procPerCategory = products::all('products')
+                ->categories()->brands()
+                ->whereCond('category_id','=',$category[0]->categories_id)
+                ->limit(3)
+                ->get();
+
             $products = products::all('products')
                 ->categories()->brands()
                 ->orderBy('products_id','DESC')
                 ->limit(8)
                 ->get();
 
+
+            $beastProducts = products::all('products')
+                ->whereCond('points','>','4')
+                ->limit(3)
+                ->get();
+
             view::show('home',[
                 'products' => $products,
+                'beastProducts' => $beastProducts,
+                'procPerCategory' => $procPerCategory,
+                'oneProc' => $oneProc,
+                'company' => $company
             ]);
 
         }

@@ -1,4 +1,4 @@
-<div class="col-xl-12 border py-4">
+<div class="col-xl-12 py-4">
     Carrito de compras
     <hr>
     <?php if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0): ?>

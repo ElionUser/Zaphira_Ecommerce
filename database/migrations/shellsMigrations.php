@@ -9,7 +9,7 @@
     $users->integer('user_id');
     $users->text('items');
     $users->float('total');
-    $users->string('pdf');
     $users->string('date');
+    $users->string('pdf');
     
     $users->execute();

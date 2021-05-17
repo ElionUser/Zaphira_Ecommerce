@@ -14,6 +14,10 @@
             categories::create('categories',$_POST);
 
             $_POST = array('name_categories' => 'Zapatos');
+
+            categories::create('categories',$_POST);
+
+            $_POST = array('name_categories' => 'Cazcos');
             
             categories::create('categories',$_POST);
 
